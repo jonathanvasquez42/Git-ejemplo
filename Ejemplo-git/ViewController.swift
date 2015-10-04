@@ -18,13 +18,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     var locationManager:CLLocationManager!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        /*
         locationManager = CLLocationManager()
         locationManager.requestAlwaysAuthorization()
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.delegate = self
         locationManager.startUpdatingLocation()
-        /*
+        */
+        
             var centerLocation = CLLocationCoordinate2DMake(-39.8130813, -73.2464813)
             var mapSpan = MKCoordinateSpanMake(0.01,0.01 )
             var MapRegion = MKCoordinateRegionMake(centerLocation, mapSpan)
@@ -37,7 +38,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
             map.addAnnotation(annotation)
         
             self.map.addAnnotation(annotation)
-*/
+
        
     }
 
@@ -45,7 +46,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+/*
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
        let regionToZoom = MKCoordinateRegionMake(manager.location.coordinate, MKCoordinateSpanMake(0.05,0.05 ))
         map.setRegion(regionToZoom, animated: true)
@@ -54,7 +55,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         CLGeocoder().reverseGeocodeLocation(manager.location, completionHandler: { (placemark , error) -> Void in
             
             if error != nil {
-                println("Error")
+                println("Errorc")
                 return
             }
             if placemark.count > 0 {
@@ -78,5 +79,5 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         println("ERROR")
         
     }
-
+*/
 }
