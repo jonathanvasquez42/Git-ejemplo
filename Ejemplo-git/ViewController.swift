@@ -12,8 +12,8 @@ import CoreLocation
 
 class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
 
-    @IBOutlet weak var myLocationView: UILabel!
-    @IBOutlet weak var myAddresView: UILabel!
+    //@IBOutlet weak var myLocationView: UILabel!
+    //@IBOutlet weak var myAddresView: UILabel!
     @IBOutlet weak var map: MKMapView!
     var locationManager:CLLocationManager!
     override func viewDidLoad() {
